@@ -1,0 +1,27 @@
+modules
+=======
+
+Os,FS,events,http,usermodules
+
+
++=========
+Non Blocking I/O
+Asynchornours
++=========
+
+Using defined modules
+---------------------
+
+* keyword -> require('path to module file')
+example:- var calc = require('./calc.js')
+
+Inside calc.js, export the module which is to be used by other files
+
+exports.module.somename = modulenamemodulename
+or 
+exports.somename = modulename
+
+example:- exports.module.somename = add
+
+Insie app.js
+    calc.add()
